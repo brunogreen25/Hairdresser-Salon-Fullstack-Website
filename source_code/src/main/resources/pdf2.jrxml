@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="clientReservationConfirmation" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ced95029-b569-4027-895c-af2843a4e088">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="FavoritoDB"/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <style name="Title" fontName="Times New Roman" fontSize="50" isBold="true"/>
+    <style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+    <style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+    <style name="Detail" fontName="Arial" fontSize="12"/>
+    <style name="Row" mode="Transparent">
+        <conditionalStyle>
+            <conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+            <style backcolor="#E6DAC3"/>
+        </conditionalStyle>
+    </style>
+    <parameter name="address" class="java.lang.String"/>
+    <parameter name="net.sf.jasperreports.json.source" class="java.lang.String" isForPrompting="false">
+        <defaultValueExpression>
+            <![CDATA["http://localhost:8080/rest/reservations/new"]]>
+        </defaultValueExpression>
+    </parameter>
+    <queryString language="JSON">
+        <![CDATA[]]>
+    </queryString>
+
+    <field name="clientMail" class="java.lang.String"/>
+    <field name="employeeId" class="java.lang.String"/>
+    <field name="startTime" class="java.lang.String"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="136" splitType="Stretch">
+            <image>
+                <reportElement x="0" y="0" width="164" height="126" uuid="ddc15723-2728-421f-b95e-2df9faf64ce1"/>
+                <imageExpression><![CDATA["https://cdn.dribbble.com/users/2279668/screenshots/5786013/________-1.png"]]></imageExpression>
+            </image>
+            <staticText>
+                <reportElement style="Title" x="170" y="0" width="384" height="62" forecolor="#69245C" uuid="1a652692-054a-40f3-ade5-68d8da36626d"/>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="Segoe UI Black" size="20" isBold="true" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[POTVRDA REZERVACIJE TERMINA]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="SubTitle" x="172" y="62" width="346" height="32" forecolor="#69245C" uuid="88d4231e-f014-4b0d-b871-1737ba63a1ae"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Segoe UI Black"/>
+                </textElement>
+                <text><![CDATA[Favorito Beauty Saloni]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="172" y="94" width="383" height="42" forecolor="#78436C" uuid="f0bfb1ea-a85a-47cd-a1a4-43f22b45e80f"/>
+                <textElement textAlignment="Center">
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[Uspješno ste rezervirali termin u Favorito Beauty Salonima. Hvala Vam na ukazanom povjerenju i nadamo se da ćete biti zadovoljni uslugom.]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="16" splitType="Stretch">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="1a61a836-d137-48b1-ad67-6ff64600bf93"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineColor="#999999"/>
+                </graphicElement>
+            </line>
+            <staticText>
+                <reportElement x="40" y="0" width="100" height="16" uuid="b2b627b5-8310-4da5-8345-11783a0610c5">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4627e28d-4914-4738-a196-30b0affffe43"/>
+                </reportElement>
+                <text><![CDATA[address]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="150" y="0" width="100" height="16" uuid="e2407b00-14f8-48a7-8205-6474ecdb50b5">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edd3a5f3-15f9-4b4b-9d5a-686595b0296b"/>
+                </reportElement>
+                <text><![CDATA[location_id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="270" y="-1" width="100" height="16" uuid="238184e3-f1bb-4c67-8fb1-e42eb2fb0c7f">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="978c3997-ac68-4fd7-a0f4-1c0d5b7b8323"/>
+                </reportElement>
+                <text><![CDATA[city]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="67" splitType="Stretch">
+            <frame>
+                <reportElement style="Row" mode="Opaque" x="0" y="0" width="555" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="a98495d8-3c8d-4fa0-81f5-30c3efc2f766"/>
+            </frame>
+            <textField>
+                <reportElement x="40" y="17" width="100" height="30" uuid="3b8836b8-52cd-45a6-b3e6-8a75c4172a8f">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4627e28d-4914-4738-a196-30b0affffe43"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{clientMail}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="150" y="17" width="100" height="30" uuid="ac90dd36-e72c-4d01-b788-f2268040ab02">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edd3a5f3-15f9-4b4b-9d5a-686595b0296b"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{employeeId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="270" y="15" width="100" height="30" uuid="27e2a11e-d379-4140-9245-bf3f8ab6353d">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="978c3997-ac68-4fd7-a0f4-1c0d5b7b8323"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{startTime}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="fa45a887-615a-4d84-a2d7-8a2219671b3c"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineColor="#999999"/>
+                </graphicElement>
+            </line>
+        </band>
+    </columnFooter>
+    <pageFooter>
+        <band height="25" splitType="Stretch">
+            <frame>
+                <reportElement mode="Opaque" x="-21" y="1" width="597" height="24" forecolor="#A1578A" backcolor="#E8D1E3" uuid="183682bc-d976-4756-83e0-6625a3f98ed1"/>
+                <textField evaluationTime="Report">
+                    <reportElement style="Column header" x="533" y="0" width="40" height="20" forecolor="#69245C" uuid="0193f9b3-1559-491a-8580-b6988863b6a1"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="10" isBold="false"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement style="Column header" x="453" y="0" width="80" height="20" forecolor="#69245C" uuid="d00b105e-494b-418b-8ac9-8b1b4824f4f0"/>
+                    <textElement textAlignment="Right" verticalAlignment="Middle">
+                        <font size="10" isBold="false"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+                </textField>
+                <textField pattern="EEEEE dd MMMMM yyyy">
+                    <reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#69245C" uuid="0616f3fe-0354-456f-8911-ec30ec51a5ae"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="10" isBold="false"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+                </textField>
+            </frame>
+        </band>
+    </pageFooter>
+    <summary>
+        <band splitType="Stretch"/>
+    </summary>
+</jasperReport>

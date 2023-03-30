@@ -1,0 +1,63 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.Navigation ul {
+    background-color: #F5D1EB;
+}
+
+li .ne{
+    display: block;
+    color: #3A2035;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: "Segoe Print";
+    padding: 29px 50px;
+    text-decoration: none;
+}
+input[type=checkbox] {
+    transform: scale(1.5);
+    position: absolute;
+    display: inline;
+    /*left: 0pc;*/
+}
+
+li .NavBar {
+    display: block;
+    color: #3A2035;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: "Segoe Print";
+    padding: 29px 50px;
+    text-decoration: none;
+}
+
+li .NavBar:hover {
+    background-color: #CB4286;
+    color: white;
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+.Navigation .NavBar_Active {
+    background-color: #7A3B6E;
+    color: white;
+}
+
+.NavComponent {
+    width: 80%;
+    background-color: #CE3993;
+}
+
+#sign_out {
+    background-color: #CE3993;
+    text-align: center;
+    color: white;
+}

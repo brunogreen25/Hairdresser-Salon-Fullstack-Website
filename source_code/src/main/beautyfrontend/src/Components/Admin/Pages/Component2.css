@@ -1,0 +1,43 @@
+.ComponentTwo .service-input-container {
+    border-style: outset;
+    border-width: 0px;
+    font-weight: 600;
+}
+
+.ComponentTwo table {
+    width: 99%;
+    font-family: "Gill Sans", sans-serif;
+
+}
+
+.ComponentTwo th, td {
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+    height: 32.5px;
+}
+
+.ComponentTwo table tr td span:hover {
+    color: #D02E7F;
+    cursor: pointer;
+}
+
+.ComponentTwo button:hover {
+    cursor: pointer;
+}
+
+
+.ComponentTwo button {
+    background-color: #F5D1EB;
+    border: 1px solid #CB4286;
+    box-shadow: none;
+    color: #7A3B6E;
+    line-height: 1;
+    padding: 9px 15px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    cursor: pointer;
+    border-radius: 3px;
+}

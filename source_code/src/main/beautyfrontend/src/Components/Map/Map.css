@@ -1,0 +1,42 @@
+/*.component2, .userContainer {
+    display: grid;
+    grid-template:
+            "headerG headerG" 1fr
+            "map-controllerG mapaG" 1fr
+            "contentG mapaG" 1fr
+        / 1fr 1fr;
+}*/
+
+
+.map-component-inner  {
+    display: grid;
+    grid-template:
+            "map-controllerG mapG" 1fr
+            "contentG mapG" 1fr
+        / 1fr 1fr;
+}
+
+.map-component-innerC {
+    display: grid;
+    grid-row-gap: 230px;
+    grid-template:
+            "mapG" 1fr
+            "map-controllerG" 1fr
+        / 1fr;
+    margin-bottom: 50px;
+}
+
+.map {
+    grid-area: mapG;
+    position: relative;
+}
+
+.map-controller {
+    grid-area: map-controllerG;
+    text-align: center;
+}
+
+.content {
+    grid-area: contentG;
+    text-align: center;
+}

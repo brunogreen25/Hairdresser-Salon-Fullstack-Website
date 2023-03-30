@@ -1,0 +1,77 @@
+.Client .component-three .employee-field:hover {
+    cursor: pointer;
+}
+
+.Client .component-three .div-rating {
+    float:right;
+    width:100px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.Client .component-three .employee-field {
+    font-weight: normal;
+    font-size: 12pt;
+    text-align: center;
+    border-style: groove;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 1px;
+    width: 250%;
+    height: 40px;
+}
+
+.Client .component-three .client-field {
+    border-style: dashed;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    width: 250%;
+    text-align: center;
+}
+
+.Client .component-three .employee-rating {
+    width: 400px;
+    text-align: center;
+}
+
+.Client .component-three textarea {
+    resize: none;
+    font-family: "Segoe Print";
+    text-align: center;
+}
+
+.Client .component-three .checked {
+    color: #ebdb34;
+}
+
+.Client .component-three .activated {
+    color: #ebdb34;
+}
+
+.Client .component-three .userSection{
+    width: 250%;
+}
+
+#star1:hover {
+    cursor:pointer;
+}
+
+#star2:hover {
+    cursor:pointer;
+}
+
+#star3:hover {
+    cursor:pointer;
+}
+
+#star4:hover {
+    cursor:pointer;
+}
+
+#star5:hover {
+    cursor:pointer;
+}
+

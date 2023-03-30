@@ -1,0 +1,201 @@
+.Auth {
+    height: 100vh;
+    display: flex;
+    color: white;
+}
+
+.AuthAside {
+    width: 50%;
+
+    /*background-color: #66DAC7;*/
+    text-align: center;
+    overflow: auto;
+    /*da overflow bude na desnoj strani*/
+    direction: rtl;
+  /*  background-color: #E2E0D6; #E2E1D9 #E1DFD5*/
+
+    background-image: url("../../Images/1.png");
+    background-color: #E1DFD5;
+}
+
+.AuthForm {
+    width: 50%;
+    padding: 10px 30px 0px 30px;
+    overflow: auto;
+    background-image: url("../../Images/bss.png");
+
+}
+
+.AuthForm .PageSwitcher {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0%;
+}
+
+.AuthForm .PageSwitcher > .Item {
+    background-color: #4B2441;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: .9em;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.AuthForm .PageSwitcher > .Item_Active {
+    background-color: #BC2A73;
+    color: white;
+}
+
+.AuthForm .PageSwitcher > .Item:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.AuthForm .PageSwitcher > .Item:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.AuthForm .FormCenter {
+    margin-bottom: 50px;
+}
+
+.FormTitle {
+    color: #4B2441;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.FormTitle > .Link {
+    color: #4B2441;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7em;
+    margin: 0 10px;
+    padding-bottom: 5px;
+}
+
+.FormTitle > .Link:first-child {
+    margin-left: 0;
+}
+
+.FormTitle > .Link_Active {
+    color: #CB4286;
+    font-weight: bold;
+    border-bottom: 1px solid #CB4286;
+}
+
+.FormTitle > .Link_Active:hover {
+    cursor: default;
+}
+
+.FormField {
+    margin-bottom: 30px;
+}
+
+.FormField .Label {
+    display: block;
+    text-transform: uppercase;
+    font-size: .9em;
+    color: #BC2A73;
+    font-weight: 600;
+}
+
+.FormField input[type="radio"]+label {
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 600;
+    color: #4B2441;
+}
+
+.FormField input[type="radio"]:checked+label {
+     font-weight: 900;
+     color: #CB4286;
+
+ }
+
+.FormField .Input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    color: #4B2441;
+    outline: none;
+    border-bottom: 1px solid #4B2441;
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.FormField .Input::placeholder {
+    color: #7A3B6E;
+}
+
+.FormField .Button {
+    background-color: #CB4286;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 15px 70px;
+    font-size: 12pt;
+}
+
+@keyframes buttonAnimate {
+    from {
+        background-color: #CB4286;
+        font-size: 12pt;
+    }
+    to {
+        background-color: #7A3B6E;
+        font-size: 15pt;
+    }
+}
+.FormField .Button:hover {
+    cursor: pointer;
+    animation-name: buttonAnimate;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.PasswordWarning, .LoginWarning, .SignUpWarning {
+    visibility: visible;
+    text-transform: uppercase;
+    color: #D02E7F;
+}
+
+/*svim tagovima koje nezelimo da se vide cemo prominit className u .Hidden*/
+.Hidden {
+    visibility: hidden;
+}
+/*.FormField__Link {
+  color: #66707D;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1.5px solid #225E62;
+  padding-bottom: 5px;
+}*/
+
+/*.FormField__CheckboxLabel {
+  color: #646F7D;
+  font-size: .9em;
+}*/
+
+/*.FormField__Checkbox {
+  position: relative;
+  top: 1.5px;
+}*/
+
+/*.FormField__TermsLink {
+  color: red;
+  border-bottom: 1px solid #199087;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-left: 5px;
+}*/

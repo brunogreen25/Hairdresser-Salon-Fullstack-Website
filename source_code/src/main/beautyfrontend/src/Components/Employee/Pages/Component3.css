@@ -1,0 +1,31 @@
+.Employee .component-three .employee-field {
+    font-weight: bolder;
+    font-size: 12pt;
+    text-align: center;
+    border-style: groove;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    width: 250%;
+    height: 40px;
+}
+
+.Employee .component-three .client-field {
+    border-style: dashed;
+    border-left-width: 50px;
+    border-left-color: white;
+    border-right-width: 0px;
+    border-bottom-width: 0pt;
+    border-top-width: 0.5px;
+    width: 235%;
+    text-align: left;
+}
+
+.Employee .component-three .employee-rating {
+    width: 400px;
+}
+
+.Employee .component-three .employee-rating .checked {
+    color: #ebdb34;
+}

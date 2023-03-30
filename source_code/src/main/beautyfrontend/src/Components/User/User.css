@@ -1,0 +1,54 @@
+.userContainer {
+    display: grid;
+    grid-template:
+            "headerGU" 1fr
+            "mapaGU" 2fr
+        / 1fr;
+}
+
+.map-component {
+    grid-area: mapaGU;
+    position: relative;
+}
+.header {
+    grid-area: headerGU;
+    text-align: center;
+}
+
+
+
+
+.userContainer{
+    color: #000000;
+    font-family: "Gill Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.userContainer .content .Link button
+{
+    background-color: #F5D1EB;
+    border: 1px solid #CB4286;
+    box-shadow: none;
+    color: #7A3B6E;
+    line-height: 1;
+    padding: 9px 15px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.userContainer .map-controller .selectObj {
+    background-color: #CE3993;
+}
+
+.userContainer .header {
+    font-weight: 900;
+    color: #4B2441;
+    font-family: "Segoe Print";
+    font-size: 19px;
+}

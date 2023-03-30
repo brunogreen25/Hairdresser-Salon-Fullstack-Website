@@ -1,0 +1,60 @@
+.Admin .component-five .employee-field:hover {
+    cursor: pointer;
+}
+
+.Admin .component-five .div-employee {
+    width: 100%;
+    height: 100%;
+}
+
+.Admin .component-five ul {
+    float:left;
+    width:1000px;
+    overflow-y: auto;
+    height: 500px;
+}
+
+.Admin .component-five .employee-field {
+    font-weight: normal;
+    font-size: 12pt;
+    text-align: center;
+    border-style: groove;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 1px;
+    width: 80%;
+    height: 40px;
+}
+
+.Admin .component-five .client-field {
+    border-style: dashed;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    width: 80%;
+
+}
+
+.Admin .component-five .employee-rating {
+
+}
+
+.Admin .component-five textarea {
+    resize: none;
+    font-family: "Segoe Print";
+}
+
+/*da se zvjezdice obojaju s liva u desno*/
+/*.rating {
+    direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    color: orange;
+}*/
+
+.Admin .component-five .employee-rating .checked {
+    color: #ebdb34;
+}

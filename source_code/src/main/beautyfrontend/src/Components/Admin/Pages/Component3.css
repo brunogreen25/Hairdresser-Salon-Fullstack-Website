@@ -1,0 +1,77 @@
+.component-three .service-info-container {
+    border-style: outset;
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.component-three table {
+    width: 99%;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.component-three th, td {
+    border-bottom: 1px solid #ddd;
+    width: 25%;
+    height: 32.5px;
+}
+
+.component-three table tr td .fa-trash:hover {
+    color: #D02E7F;
+    cursor: pointer;
+}
+
+.component-three button:hover {
+    cursor: pointer;
+}
+
+.component-three .password-generator-container {
+    background-color: #ffffff;
+}
+
+
+.component-three button {
+    background-color: #F5D1EB;
+    border: 1px solid #CB4286;
+    box-shadow: none;
+    color: #7A3B6E;
+    line-height: 1;
+    padding: 9px 15px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+.component-three .employee-info-container{
+    font-weight: 600;
+    display: grid;
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:    "empDetails password"
+                            "location service"
+                            "saveButton saveButton";
+
+}
+.component-three .employee-info-container .password-generator-container{
+    grid-area: password;
+}
+.component-three .employee-info-container .service-chooser-container{
+    grid-area: service;
+}
+.component-three .employee-info-container .location-chooser-container{
+    grid-area: location;
+}
+.component-three .employee-info-container .buttonSaveEmp{
+    grid-area: saveButton;
+}
+.component-three .employee-info-container .containerEmpDetails{
+    grid-area: empDetails;
+}
+
+#deleteButtonEmpAdmin:hover {
+    cursor: pointer;
+}

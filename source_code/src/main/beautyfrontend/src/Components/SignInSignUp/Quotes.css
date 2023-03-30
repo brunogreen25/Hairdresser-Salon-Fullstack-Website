@@ -1,0 +1,34 @@
+.Quotes {
+    text-align: center;
+    font-weight: 600;
+    font-size: 17pt;
+}
+
+.Quotes .Rating {
+    padding: 30px 30px;
+    color: #4B2441;
+    font-style: italic;
+    /*font-family: "MV Boli"; */
+    font-family: "Segoe Print";
+    animation-name: ratingAnimate;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+}
+
+@keyframes ratingAnimate {
+    from {
+        font-size: 0pt;
+    }
+    to {
+        font-size: 17pt;
+    }
+}
+
+.Quotes .Rating::before {
+    content: '';
+}
+.Quotes .Rating::after {
+    content: '';
+}

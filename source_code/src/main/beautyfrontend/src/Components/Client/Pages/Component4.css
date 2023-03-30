@@ -1,0 +1,17 @@
+.ComponentFourth button {
+    background-color: #F5D1EB;
+    border: 1px solid #CB4286;
+    box-shadow: none;
+    color: #7A3B6E;
+    line-height: 1;
+    padding: 9px 15px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
