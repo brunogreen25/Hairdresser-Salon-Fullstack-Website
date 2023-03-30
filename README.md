@@ -1,6 +1,6 @@
 # Favorito
 
-Images: \
+### Images:
 
 Admin add discount interface
 ![markdown logo](images/AdminAddDiscount_interface.png "image1")
