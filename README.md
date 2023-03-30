@@ -19,3 +19,4 @@ User registration failes interface
 
 Selenium examples:
 ![markdown logo](images/UserRegistratonFailed_selenium.png "image6")
+![markdown logo](images/UserRegistration_selenium.png "image7")
