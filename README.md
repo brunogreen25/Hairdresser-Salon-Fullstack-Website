@@ -2,4 +2,4 @@
 
 Images: \
 
-![markdown logo](./images/AdminAddDiscount_interface.png"")
+![markdown logo](images/AdminAddDiscount_interface.png"Logo1")
